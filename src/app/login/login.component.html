@@ -1,0 +1,22 @@
+
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Email" name="uname" [(ngModel)]="loginObject.email" required>
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="loginObject.password" required>
+
+    <button (click)="loginCall()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="/signup">Signup</a></span>
+  </div>
+  {{loginObject.email}}
+  {{loginObject.password}}

@@ -1,0 +1,27 @@
+<div class="container">
+  <label for="uname"><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" [(ngModel)]="signupObject.username" required>
+
+
+  <label for="email"><b>Email</b></label>
+  <input type="email" placeholder="Enter Email" name="email" [(ngModel)]="signupObject.email" required>
+
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="signupObject.password" required>
+
+  <label for="confirmpsw"><b>Confirm Password</b></label>
+  <input type="password" placeholder="Enter Password" name="confirmpsw" [(ngModel)]="signupObject.confirmPassword"
+    required>
+
+
+  <button (click)="signupCall()">SignUp</button>
+
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" class="cancelbtn">Cancel</button>
+  <span class="psw">Forgot <a href="/login">Login</a></span>
+</div>
+
+{{signupObject.email}}
